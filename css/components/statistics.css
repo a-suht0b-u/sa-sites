@@ -1,0 +1,98 @@
+.statistics {
+	max-width: 1440px;
+	margin: 0 auto;
+	margin-top: 90px;
+}
+
+.statistics__title {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 59px;
+	margin-bottom: 25px;
+	color: var(--primary-color);
+	text-align: center;
+	transform: translateY(-25px);
+	-webkit-transform: translateY(-25px);
+	-moz-transform: translateY(-25px);
+	-ms-transform: translateY(-25px);
+	-o-transform: translateY(-25px);
+}
+
+.statistics__layout {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.statistics__item {
+	border: 3px solid var(--primary-color);
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: var(--primary-color);
+}
+
+.stat__layout {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.statistics__item h4 {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 65px;
+	line-height: 110px;
+	position: relative;
+}
+.statistics__item h4::before {
+	content: '+';
+	font-size: 65px;
+}
+
+.statistics__item p {
+	font-family: 'Avantgarde', 'TeX Gyre Adventor', 'URW Gothic L', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 40px;
+	color: inherit;
+	width: 200px;
+	text-align: center;
+	display: inline-block;
+}
+@media only screen and (max-width: 750px) {
+	.statistics__layout {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.statistics__item {
+		width: 250px;
+		height: 250px;
+		margin-top: 20px;
+	}
+
+	.statistics__item > h4 {
+		font-size: 80px;
+	}
+	.statistics__item > h4::before {
+		font-size: 55px;
+	}
+
+	.statistics__item > p {
+		font-size: 28px;
+	}
+}
